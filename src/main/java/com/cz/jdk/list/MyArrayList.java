@@ -90,15 +90,7 @@ public class MyArrayList<E> implements MyList<E> {
 
     @Override
     public int size() {
-        int count = 0;
-        for (int i = 0; i < elements.length; i++) {
-            if (elements[i] != null) {
-                count ++;
-                continue;
-            }
-            break;
-        }
-        return count;
+        return current;
     }
 
     @Override
