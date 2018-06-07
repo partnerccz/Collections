@@ -67,6 +67,7 @@ public class MyArrayList<E> implements MyList<E> {
 
     @Override
     public void insert(Integer index, E e) {
+        checkSize();
         checkIndex(index);
         for (int i = elements.length; i >= index; i--) {
             if (i + 1 < elements.length) {
