@@ -7,6 +7,14 @@ package com.cz.jdk.list;
 public class TestList {
 
     public static void main(String[] args) {
+        // method test1()
+        test1();
+
+        // method test2()
+        test2();
+    }
+
+    private static void test1() {
         MyList<String> myList = new MyArrayList();
         myList.add("aaa");
         myList.add("ccc");
@@ -40,6 +48,17 @@ public class TestList {
         for (int i = 0; i < myList.size(); i++) {
             System.out.println(myList.get(i));
         }
+    }
 
+    private static void test2() {
+
+        MyList list = new MyArrayList();
+        list.add(1);
+        list.add("b");
+        list.add(1.2);
+        System.out.println("------------------------  test2 method ------------------------");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
     }
 }
